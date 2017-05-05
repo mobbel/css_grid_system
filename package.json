@@ -1,0 +1,31 @@
+{
+  "name": "mein-lebenslauf",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://gitlab.better-scripting.com/mobbel/mein-lebenslauf.git"
+  },
+  "author": "",
+  "license": "BSD-2-Clause",
+  "devDependencies": {
+    "autoprefixer": "^6.7.7",
+    "grunt": "*",
+    "grunt-cli": "*",
+    "grunt-contrib-jshint": "*",
+    "grunt-contrib-sass": "*",
+    "grunt-postcss": "^0.8.0",
+    "grunt-script-link-tags": "*",
+    "grunt-ts": "^6.0.0-beta.15",
+    "grunt-tslint": "^4.0.1",
+    "grunt-wiredep": "*",
+    "load-grunt-tasks": "~3.5.2",
+    "time-grunt": "~1.4.0",
+    "tslint": "^4.5.1",
+    "typescript": "~2.2.1"
+  }
+}

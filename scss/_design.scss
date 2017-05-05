@@ -1,0 +1,63 @@
+
+/********************** color-palette *********************
+ *
+ * Primary Color: #616161
+ * Lighter Primary Color: #BDBDBD
+ * Darker Primary Color: #212121
+ *
+ * Accent Color: #F4511E
+ * Lighter Accent Color: #FF8A65
+ * Darker Accent Color: #D84315
+ *
+ * font opacity normal: 87%
+ * font opacity light: 54%
+ * font opacity disabled: 38%
+ **********************************************************/
+
+.primaryColor {
+  background-color: #616161;
+}
+
+.primaryLightColor {
+  background-color: #BDBDBD;
+}
+
+.primaryDarkColor {
+  background-color: #212121;
+}
+
+.primaryContentColor {
+  background-color: #EEEEEE;
+}
+
+.accentColor {
+  background-color: #F4511E;
+}
+
+.accentLightColor {
+  background-color: #FF8A65;
+}
+
+.accentDarkColor {
+  background-color: #D84315;
+}
+
+.darkFontNormal {
+  opacity: 0.87;
+  color: #000000;
+}
+
+.darkFontLight {
+  opacity: 0.54;
+  color: #000000;
+}
+
+.darkFontDisabled {
+  opacity: 0.38;
+  color: #000000;
+}
+
+.lightFontNormal {
+  opacity: 100%;
+  color: #FFFFFF;
+}
