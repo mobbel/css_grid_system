@@ -59,6 +59,9 @@ html, body {
   }
   &-11 {
     width: 91.666667%;
+    @media screen and (max-width: $max_middle) {
+      width: 100%
+    }
     @include _paddings;
     position: relative;
     min-height: 1px;
@@ -66,6 +69,9 @@ html, body {
   }
   &-10 {
     width: 83.333333%;
+    @media screen and (max-width: $max_middle) {
+      width: 100%
+    }
     @include _paddings;
     position: relative;
     min-height: 1px;
@@ -73,6 +79,9 @@ html, body {
   }
   &-9 {
     width: 75%;
+    @media screen and (max-width: $max_middle) {
+      width: 100%
+    }
     @include _paddings;
     position: relative;
     min-height: 1px;
@@ -80,6 +89,9 @@ html, body {
   }
   &-8 {
     width: 66.666667%;
+    @media screen and (max-width: $max_middle) {
+      width: 100%
+    }
     @include _paddings;
     position: relative;
     min-height: 1px;
@@ -87,6 +99,12 @@ html, body {
   }
   &-7 {
     width: 58.333333%;
+    @media screen and (max-width: $max_middle) {
+      width: 87.5%
+    }
+    @media screen and (max-width: $max_small) {
+      width: 100%
+    }
     @include _paddings;
     position: relative;
     min-height: 1px;
@@ -94,6 +112,12 @@ html, body {
   }
   &-6 {
     width: 50%;
+    @media screen and (max-width: $max_middle) {
+      width: 75%
+    }
+    @media screen and (max-width: $max_small) {
+      width: 100%
+    }
     @include _paddings;
     position: relative;
     min-height: 1px;
@@ -101,6 +125,12 @@ html, body {
   }
   &-5 {
     width: 41.666667%;
+    @media screen and (max-width: $max_middle) {
+      width: 62.5%
+    }
+    @media screen and (max-width: $max_small) {
+      width: 100%
+    }
     @include _paddings;
     position: relative;
     min-height: 1px;
@@ -108,6 +138,12 @@ html, body {
   }
   &-4 {
     width: 33.333333%;
+    @media screen and (max-width: $max_middle) {
+      width: 50%
+    }
+    @media screen and (max-width: $max_small) {
+      width: 100%
+    }
     @include _paddings;
     position: relative;
     min-height: 1px;
@@ -115,6 +151,12 @@ html, body {
   }
   &-3 {
     width: 25%;
+    @media screen and (max-width: $max_middle) {
+      width: 37.5%
+    }
+    @media screen and (max-width: $max_small) {
+      width: 75%
+    }
     @include _paddings;
     position: relative;
     min-height: 1px;
@@ -122,6 +164,12 @@ html, body {
   }
   &-2 {
     width: 16.666667%;
+    @media screen and (max-width: $max_middle) {
+      width: 25%
+    }
+    @media screen and (max-width: $max_small) {
+      width: 50%
+    }
     @include _paddings;
     position: relative;
     min-height: 1px;
@@ -129,6 +177,12 @@ html, body {
   }
   &-1 {
     width: 8.333333%;
+    @media screen and (max-width: $max_middle) {
+      width: 12.5%
+    }
+    @media screen and (max-width: $max_small) {
+      width: 25%
+    }
     @include _paddings;
     position: relative;
     min-height: 1px;
