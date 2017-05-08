@@ -1,0 +1,137 @@
+@import "_screen_widths";
+@import "_padding_mixins";
+
+/*
+ * We create a 12 Col Grid
+ */
+* {
+  box-sizing: border-box;
+  position: relative;
+  margin: 0px;
+  padding: 0px;
+}
+
+html, body {
+  width: 100%;
+}
+
+.container {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  @include _paddings;
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  &-fluid {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    @include _paddings;
+    &:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  }
+}
+
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-bottom: 5px;
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+.col {
+  &-12 {
+    width: 100%;
+    @include _paddings;
+    position: relative;
+    min-height: 1px;
+    float: left;
+  }
+  &-11 {
+    width: 91.666667%;
+    @include _paddings;
+    position: relative;
+    min-height: 1px;
+    float: left;
+  }
+  &-10 {
+    width: 83.333333%;
+    @include _paddings;
+    position: relative;
+    min-height: 1px;
+    float: left;
+  }
+  &-9 {
+    width: 75%;
+    @include _paddings;
+    position: relative;
+    min-height: 1px;
+    float: left;
+  }
+  &-8 {
+    width: 66.666667%;
+    @include _paddings;
+    position: relative;
+    min-height: 1px;
+    float: left;
+  }
+  &-7 {
+    width: 58.333333%;
+    @include _paddings;
+    position: relative;
+    min-height: 1px;
+    float: left;
+  }
+  &-6 {
+    width: 50%;
+    @include _paddings;
+    position: relative;
+    min-height: 1px;
+    float: left;
+  }
+  &-5 {
+    width: 41.666667%;
+    @include _paddings;
+    position: relative;
+    min-height: 1px;
+    float: left;
+  }
+  &-4 {
+    width: 33.333333%;
+    @include _paddings;
+    position: relative;
+    min-height: 1px;
+    float: left;
+  }
+  &-3 {
+    width: 25%;
+    @include _paddings;
+    position: relative;
+    min-height: 1px;
+    float: left;
+  }
+  &-2 {
+    width: 16.666667%;
+    @include _paddings;
+    position: relative;
+    min-height: 1px;
+    float: left;
+  }
+  &-1 {
+    width: 8.333333%;
+    @include _paddings;
+    position: relative;
+    min-height: 1px;
+    float: left;
+  }
+}

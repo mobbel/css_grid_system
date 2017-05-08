@@ -4,13 +4,8 @@ module.exports = function(grunt) {
   require('time-grunt')(grunt);
 
   grunt.initConfig({
-    wiredep: {
-      task: {
-        src: 'index.html'
-      }
-    },
     tags: {
-	    buildLinks: {
+	    build: {
 	      options: {
 			    linkTemplate: '<link rel="stylesheet" type="text/css" href="{{ path }}" media="screen"/>',
 	        openTag: '<!-- start css template tags -->',
@@ -24,6 +19,9 @@ module.exports = function(grunt) {
     },
     sass: {
       dist: {
+        options: {
+          style: 'expanded'
+        },
         files: [{
           expand: true,
           cwd: 'scss',
@@ -52,16 +50,12 @@ module.exports = function(grunt) {
   });
 
   grunt.registerTask('default', [
-    'wiredep',
     'sass',
     'postcss',
     'tags'
   ]);
   grunt.registerTask('build', [
-    'wiredep',
     'jshint',
-    'tslint',
-    'ts:development',
     'sass',
     'postcss',
     'tags'
