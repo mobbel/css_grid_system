@@ -1,2 +1,22 @@
 @import "grid/_grid";
 @import "_design";
+
+nav ul {
+  position: relative;
+  float: right;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+nav li {
+  position: relative;
+  float: left;
+  list-style: none;
+  margin-right: 8px;
+  @media screen and (min-width: $max_small) {
+    margin-right: 16px;
+  }
+  @media screen and (min-width: $max_middle) {
+    margin-right: 24px;
+  }
+}

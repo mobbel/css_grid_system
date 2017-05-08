@@ -46,14 +46,32 @@ module.exports = function(grunt) {
       dist: {
         src: 'styles/*.css'
       }
+    },
+    watch: {
+      src: {
+        files: ['**/*.scss'],
+        tasks: ['sass', 'postcss']
+      }
     }
   });
 
   grunt.registerTask('default', [
     'sass',
     'postcss',
+    'tags',
+    'watch'
+  ]);
+
+  grunt.registerTask('noWatch', [
+    'sass',
+    'postcss',
     'tags'
   ]);
+
+  grunt.registerTask('onlyWatch', [
+    'watch'
+  ]);
+
   grunt.registerTask('build', [
     'jshint',
     'sass',

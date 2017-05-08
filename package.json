@@ -18,6 +18,7 @@
     "grunt-cli": "*",
     "grunt-contrib-jshint": "*",
     "grunt-contrib-sass": "*",
+    "grunt-contrib-watch": "*",
     "grunt-postcss": "^0.8.0",
     "grunt-script-link-tags": "*",
     "grunt-wiredep": "*",
