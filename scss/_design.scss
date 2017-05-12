@@ -14,32 +14,40 @@
  * font opacity disabled: 38%
  **********************************************************/
 
+$primaryColor: #69f0ae;
+$primaryLightColor: #9fffe0;
+$primaryDarkColor: #2bbd7e;
+$primaryContentColor: #EEEEEE;
+$accentColor: #4f5b62;
+$accentLightColor: #263238;
+$accentDarkColor: #000a12;
+
 .primaryColor {
-  background-color: #69f0ae;
+  background-color: $primaryColor;
 }
 
 .primaryLightColor {
-  background-color: #9fffe0;
+  background-color: $primaryLightColor;
 }
 
 .primaryDarkColor {
-  background-color: #2bbd7e;
+  background-color: $primaryDarkColor;
 }
 
 .primaryContentColor {
-  background-color: #EEEEEE;
+  background-color: $primaryContentColor;
 }
 
 .accentColor {
-  background-color: #4f5b62;
+  background-color: $accentColor;
 }
 
 .accentLightColor {
-  background-color: #263238;
+  background-color: $accentLightColor;
 }
 
 .accentDarkColor {
-  background-color: #000a12;
+  background-color: $accentDarkColor;
 }
 
 .darkFontNormal {

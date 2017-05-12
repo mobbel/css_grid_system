@@ -20,3 +20,15 @@ nav li {
     margin-right: 24px;
   }
 }
+header {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+header a {
+  text-decoration: none;
+}
+
+header svg path {
+  stroke: #4f5b62;
+}
