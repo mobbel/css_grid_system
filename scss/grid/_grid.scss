@@ -1,9 +1,15 @@
 @import "_screen_widths";
 @import "_padding_mixins";
+@import "_cell_mixin";
 
 /*
  * We create a 12 Col Grid
  */
+
+$full-grid-columns: 12;
+$middle-grid-columns: 8;
+$small-grid-columns: 4;
+
 * {
   box-sizing: border-box;
   position: relative;
@@ -50,142 +56,9 @@ html, body {
 }
 
 .col {
-  &-12 {
-    width: 100%;
-    @include _paddings;
-    position: relative;
-    min-height: 1px;
-    float: left;
-  }
-  &-11 {
-    width: 91.666667%;
-    @media screen and (max-width: $max_middle) {
-      width: 100%
+  @for $index from 1 through $full-grid-columns {
+    &-#{$index} {
+      @include _cell($index);
     }
-    @include _paddings;
-    position: relative;
-    min-height: 1px;
-    float: left;
-  }
-  &-10 {
-    width: 83.333333%;
-    @media screen and (max-width: $max_middle) {
-      width: 100%
-    }
-    @include _paddings;
-    position: relative;
-    min-height: 1px;
-    float: left;
-  }
-  &-9 {
-    width: 75%;
-    @media screen and (max-width: $max_middle) {
-      width: 100%
-    }
-    @include _paddings;
-    position: relative;
-    min-height: 1px;
-    float: left;
-  }
-  &-8 {
-    width: 66.666667%;
-    @media screen and (max-width: $max_middle) {
-      width: 100%
-    }
-    @include _paddings;
-    position: relative;
-    min-height: 1px;
-    float: left;
-  }
-  &-7 {
-    width: 58.333333%;
-    @media screen and (max-width: $max_middle) {
-      width: 87.5%
-    }
-    @media screen and (max-width: $max_small) {
-      width: 100%
-    }
-    @include _paddings;
-    position: relative;
-    min-height: 1px;
-    float: left;
-  }
-  &-6 {
-    width: 50%;
-    @media screen and (max-width: $max_middle) {
-      width: 75%
-    }
-    @media screen and (max-width: $max_small) {
-      width: 100%
-    }
-    @include _paddings;
-    position: relative;
-    min-height: 1px;
-    float: left;
-  }
-  &-5 {
-    width: 41.666667%;
-    @media screen and (max-width: $max_middle) {
-      width: 62.5%
-    }
-    @media screen and (max-width: $max_small) {
-      width: 100%
-    }
-    @include _paddings;
-    position: relative;
-    min-height: 1px;
-    float: left;
-  }
-  &-4 {
-    width: 33.333333%;
-    @media screen and (max-width: $max_middle) {
-      width: 50%
-    }
-    @media screen and (max-width: $max_small) {
-      width: 100%
-    }
-    @include _paddings;
-    position: relative;
-    min-height: 1px;
-    float: left;
-  }
-  &-3 {
-    width: 25%;
-    @media screen and (max-width: $max_middle) {
-      width: 37.5%
-    }
-    @media screen and (max-width: $max_small) {
-      width: 75%
-    }
-    @include _paddings;
-    position: relative;
-    min-height: 1px;
-    float: left;
-  }
-  &-2 {
-    width: 16.666667%;
-    @media screen and (max-width: $max_middle) {
-      width: 25%
-    }
-    @media screen and (max-width: $max_small) {
-      width: 50%
-    }
-    @include _paddings;
-    position: relative;
-    min-height: 1px;
-    float: left;
-  }
-  &-1 {
-    width: 8.333333%;
-    @media screen and (max-width: $max_middle) {
-      width: 12.5%
-    }
-    @media screen and (max-width: $max_small) {
-      width: 25%
-    }
-    @include _paddings;
-    position: relative;
-    min-height: 1px;
-    float: left;
   }
 }

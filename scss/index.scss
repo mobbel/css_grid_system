@@ -6,29 +6,56 @@ nav ul {
   float: right;
   margin-top: 5px;
   margin-bottom: 5px;
+  & > li {
+    position: relative;
+    float: left;
+    list-style: none;
+    margin-right: 8px;
+    @media screen and (min-width: $max_small) {
+      margin-right: 16px;
+    }
+    @media screen and (min-width: $max_middle) {
+      margin-right: 24px;
+    }
+  }
 }
 
-nav li {
-  position: relative;
-  float: left;
-  list-style: none;
-  margin-right: 8px;
-  @media screen and (min-width: $max_small) {
-    margin-right: 16px;
-  }
-  @media screen and (min-width: $max_middle) {
-    margin-right: 24px;
-  }
-}
 header {
   padding-top: 10px;
   padding-bottom: 10px;
-}
-
-header a {
-  text-decoration: none;
-}
-
-header svg path {
-  stroke: #4f5b62;
+  & span {
+    font-weight: bolder;
+    font-size: xx-large;
+  }
+  & a {
+    text-decoration: none;
+  }
+  & svg path {
+    stroke: $accentColor;
+  }
+  & nav {
+    font-size: smaller;
+    float: right;
+    & > ul > li {
+      & > ul {
+        font-size: smaller;
+        display: none;
+        padding: 8px;
+        @media screen and (min-width: $max_small) {
+          padding: 16px;
+        }
+        @media screen and (min-width: $max_middle) {
+          padding: 24px;
+        }
+      }
+      &:hover > ul {
+        display: block;
+        position: absolute;
+        margin: 0px;
+        & > li {
+          position: relative;
+        }
+      }
+    }
+  }
 }

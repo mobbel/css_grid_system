@@ -17,10 +17,11 @@
 $primaryColor: #69f0ae;
 $primaryLightColor: #9fffe0;
 $primaryDarkColor: #2bbd7e;
-$primaryContentColor: #EEEEEE;
-$accentColor: #4f5b62;
-$accentLightColor: #263238;
+$accentColor: #263238;
+$accentLightColor: #4f5b62;
 $accentDarkColor: #000a12;
+$ContentBackgroundColor: #FFFFFF;
+$wholeBackgroundColor: #EEEEEE;
 
 .primaryColor {
   background-color: $primaryColor;
@@ -34,9 +35,6 @@ $accentDarkColor: #000a12;
   background-color: $primaryDarkColor;
 }
 
-.primaryContentColor {
-  background-color: $primaryContentColor;
-}
 
 .accentColor {
   background-color: $accentColor;
@@ -48,6 +46,14 @@ $accentDarkColor: #000a12;
 
 .accentDarkColor {
   background-color: $accentDarkColor;
+}
+
+.ContentBackgroundColor {
+  background-color: $ContentBackgroundColor;
+}
+
+.wholeBackgroundColor {
+  background-color: $wholeBackgroundColor;
 }
 
 .darkFontNormal {

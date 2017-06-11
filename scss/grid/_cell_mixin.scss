@@ -1,0 +1,23 @@
+@mixin _cell($index) {
+  width: percentage($index/$full-grid-columns);
+  @media screen and (max-width: $max_middle) {
+    @if $index > $middle-grid-columns {
+      width: 100%;
+    }
+    @else {
+      width: percentage($index/$middle-grid-columns);
+    }
+  }
+  @media screen and (max-width: $max_small) {
+    @if $index > $small-grid-columns {
+      width: 100%;
+    }
+    @else {
+      width: percentage($index/$small-grid-columns);
+    }
+  }
+  @include _paddings;
+  position: relative;
+  min-height: 1px;
+  float: left;
+}
