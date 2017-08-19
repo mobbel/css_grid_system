@@ -56,9 +56,38 @@ html, body {
 }
 
 .col {
-  @for $index from 1 through $full-grid-columns {
-    &-#{$index} {
-      @include _cell($index);
+  @for $index from 1 through $small-grid-columns {
+    &-small-#{$index} {
+      @include _cell($index, $small-grid-columns);
+    }
+  }
+  @for $index from 1 through ($small-grid-columns - 1) {
+    &-small-space-#{$index} {
+      @include _cell($index, $small-grid-columns);
+    }
+  }
+  @media screen and (min-width: $max_small) {
+    @for $index from 1 through $middle-grid-columns {
+      &-middle-#{$index} {
+        @include _cell($index, $middle-grid-columns);
+      }
+    }
+    @for $index from 1 through ($middle-grid-columns - 1) {
+      &-middle-space-#{$index} {
+        @include _cell($index, $middle-grid-columns);
+      }
+    }
+  }
+  @media screen and (min-width: $max_middle) {
+    @for $index from 1 through $full-grid-columns {
+      &-full-#{$index} {
+        @include _cell($index, $full-grid-columns);
+      }
+    }
+    @for $index from 1 through ($full-grid-columns - 1) {
+      &-full-space-#{$index} {
+        @include _cell($index, $full-grid-columns);
+      }
     }
   }
 }
